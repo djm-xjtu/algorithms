@@ -1,0 +1,15 @@
+int n,k;
+int a[MAX_N];
+//a是已排序数组，求满足a[i]>=k的最小i
+void solve(){
+int lb=-1, ub=n;
+while(ub-lb>1){
+int mid=(ub-lb)/2;
+if(a[mid]>=k){
+ub=mid;
+}
+else{
+lb=mid;
+}
+return ub;
+}
