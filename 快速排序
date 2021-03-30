@@ -1,0 +1,20 @@
+void quicksort(int& arr,int begin,int end){
+    if(begin>end)
+    return;
+    int tem=arr[begin],i=begin,j=end;
+    while(i!=j){
+        while(arr[j]>=tem && j>i){
+            j--;
+        }
+        while(arr[i]<=tem && j>i){
+            i++;
+        }
+        int t=arr[i];
+        arr[i]=arr[j];
+        arr[j]=t;
+    }
+    arr[begin]=arr[i];
+    arr[i]=tem;
+    quicksort(arr,begin,i-1);
+    quicksort(arr,i+1,end);
+}
