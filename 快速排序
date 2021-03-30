@@ -1,4 +1,6 @@
-void quicksort(int& arr,int begin,int end){
+//*arr表示动态数组
+//用int *arr=new int[size]分配内存
+void quicksort(int *arr,int begin,int end){
     if(begin>end)
     return;
     int tem=arr[begin],i=begin,j=end;
