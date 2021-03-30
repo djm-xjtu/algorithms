@@ -1,4 +1,5 @@
 //absolutely my codes are very easy to self-destory but I love to see my younger face aha.
+//look at the line 19 directly
 int n,k;
 int a[MAX_N];
 //a是已排序数组，求满足a[i]>=k的最小i
@@ -13,4 +14,17 @@ else{
 lb=mid;
 }
 return ub;
+}
+
+r=mid,l=mid+1,mid=(l+r)>>1;//用来求>=k的第一个数
+l=mid,r=mid-1,mid=(l+r+1)>>1;//用来求<=k的第一个数
+example:
+void solve(){
+int mid=(l+r)>>1;
+if(a[mid]<k) {
+l=mid+1;
+}
+else{
+r=mid;
+}
 }
