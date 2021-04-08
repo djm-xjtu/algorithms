@@ -1,5 +1,6 @@
 //absolutely my codes are very easy to self-destory but I love to see my younger face aha.
 //look at the line 19 directly
+//AcWing 102 理解下二分的应用
 int n,k;
 int a[MAX_N];
 //a是已排序数组，求满足a[i]>=k的最小i
